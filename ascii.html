@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>American Standard Code for Information Interchange</title>
+  <script src="ascii.js"></script>
+  <link rel="stylesheet" href="ascii.css">
+</head>
+<body onload="init();">
+  <div class="asciitable">
+    <div id="panel" class="char">
+      <div>
+        <div class="dec num">0</div>
+        <div class="hex num right">0h</div>
+      </div>
+      <div class="center rep">
+      </div>
+      <div>
+        <div class="ctrlfooter printfooter">
+          <span class="cntrl">c</span><!-- ⌨️ control 🎮 ⌨️ 👨‍💻 -->
+          <span class="print">p</span><!-- 🖨️ print -->
+          <span class="graph">g</span><!-- 👁️ graph -->
+          <span class="alpha">a</span><!-- α alpha -->
+          <span class="digit">d</span><!-- ℕ digit -->
+          <span class="xdigit">x</span><!-- isxdigit -->
+          <span class="upper">u</span><!-- ⬆️ upper -->
+          <span class="lower">l</span><!-- ⬇️ lower -->
+          <span class="space">s</span><!-- space -->
+          <span class="punct">!</span><!-- punct -->
+        </div>
+        <div class="ctrlfooter caret"></div>
+        <div class="ctrlfooter escape right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="asciitable">
+    <div id="status">
+      <div class="statuspanel">
+        <span class="attr cntrl" id="cntrl"><u>C</u>ontrol character</span><br />
+        <span class="attr print" id="print"><u>P</u>rintable character</span><br />
+        <span class="attr graph" id="graph"><u>G</u>raphical character</span><br />
+      </div>
+      <div class="statuspanel">
+        <span class="attr alpha" id="alpha"><u>A</u>lphabetical character</span><br />
+        <span class="attr digit" id="digit"><u>D</u>igit character</span><br />
+        <span class="attr xdigit" id="xdigit"><u>H</u>exadecimal digit character</span><br />
+      </div>
+      <div class="statuspanel">
+        <span class="attr upper" id="upper"><u>U</u>ppercase character</span><br />
+        <span class="attr lower" id="lower"><u>L</u>owercase character</span><br />
+        <span class="attr space" id="space"><u>S</u>pace character</span><br />
+      </div>
+      <div class="statuspanel">
+        <span class="attr punct" id="punct"><u>!</u> Punctuation character</span><br />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

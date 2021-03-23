@@ -1,0 +1,31 @@
+body {font-size: 15px; background-color: black; color: white; overflow: hidden;}
+.asciitable {width: 1088px; margin: auto;}
+div {overflow: hidden; /*border: solid 1px;*/}
+span {/* border: solid 1px; */}
+.center {text-align: center;}
+.char{border: solid 1px black; width: 64px; height: 64px; padding: 1px; /*margin: 1px;*/}
+.char:hover{border: solid 1px red;}
+.dec {width: 50%; float: left;}
+.hex {width: 50%;}
+.num {color: cyan;}
+.right {text-align: right;}
+.rep {height: 30px; font-size: 20px; color: yellow;}
+.ctrlfooter {width: 33.33%; float: left;}
+.controlchar {background-color: #3e4451; color: #282c34;}
+.printchar {background-color: #282c34; color: #5c6370;}
+.caret {color: #ce6e2b;}
+.space {color: #00b050;}
+/* change this colour */ .cntrl {color: lightblue;}
+/* change this colour */ .print {color: white;}
+/* change this colour */ .graph {color: #b87333;}
+/* change this colour */ .punct {color: red;}
+/* change this colour */ .digit {color: green;}
+/* change this colour */ .alpha {color: silver;}
+.escape {color: gold;}
+.lower {color: magenta;}
+.upper {color: #b18661;}
+.xdigit {color: red;}
+.tooltip{width: 256px;position: absolute;z-index: 1000;background: rgba(0, 0, 0, 0.90); padding: 4px; border: solid 1px gray; border-radius: 8px;}
+#status {border: solid 1px white; height: 64px;}
+.statuspanel{float: left; padding: 3px;}
+u {font-weight: bold;}

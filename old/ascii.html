@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>American Standard Code for Information Interchange</title>
+  <script src="ascii.js"></script>
+  <style>
+  table {
+    border-style: none;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+  td {
+    border-style: none;
+    /* border: 1px solid black; */
+  }
+  td.outer {
+    border: 1px solid black;
+    width: 77px;
+    height: 77px;
+  }
+  td.charCode {
+    font-size: small;
+    color: cyan;
+  }
+  td.hex {
+    text-align: right;
+    vertical-align: top;
+  }
+  td.dec {
+    text-align: left;
+    vertical-align: top;
+  }
+  td.tagPunctDigitAlpha {
+    font-size: small;
+    /* text-decoration: underline;
+    text-decoration-color: red; */
+    /* color: red; */
+    text-align: left;
+    /* vertical-align: bottom; */
+  }
+  td.punct {color: red;}
+  td.digit {color: green;}
+  td.alpha {color: blue;}
+  td.tagCtrlPrint {
+    font-size: small;
+    /* text-decoration: underline;
+    text-decoration-color: blue; */
+    /* color: blue; */
+    color: white;
+    text-align: left;
+    /* vertical-align: bottom; */
+  }
+  td.tagGraph {
+    font-size: small;
+    /* text-decoration: underline;
+    text-decoration-color: green; */
+    /* color: green; */
+    color: brown;
+    text-align: left;
+    /* transform: rotate(90deg); */
+  }
+  td.print {
+    /* background-color: #b4c6e7; */
+    background-color: #282c34;
+    color: #5c6370;
+  }
+  td.cntrl {
+    /* background-color: #fff2cc; */
+    background-color: #3e4451;
+    color: #282c34;
+  }
+  td.SP {
+    /* background-color: #00b050;
+    color: #fffefc; */
+    color: #00b050;
+    text-align: center;
+    vertical-align: top;
+  }
+  td.L {
+    /* background-color: purple;
+    color: white; */
+    /* color: purple; */
+    color: magenta;
+    font-size: small;
+  }
+  td.U {
+    /* background-color: #ffc000;
+    color: gray; */
+    color: #b18661;
+    font-size: small;
+  }
+  td.charMain {
+    /* color: #ffc000; */
+    color: yellow;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+  }
+  td.hexDigit {
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+  </style>
+</head>
+<body>
+  <!-- Character Class Tests: &lt;ctype.h&gt; -->
+  <script type="text/javascript">ascii();</script>
+</body>
+</html>
