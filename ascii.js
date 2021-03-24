@@ -1,6 +1,4 @@
 /*
-// TODO: TH / HEADERS _0 ate _F na horiz e 0_ ate 7_ na vert
-// TODO: binary and octal na tooltip
 // TODO: statusbar mostra o retorno de cada função da ctype pro char selecionado
 // TODO: Tip: Ctrl+V for VERBATIM input (e.g.: CTRL+V M -> produces ^M)
 */
@@ -95,13 +93,13 @@ function fillTooltip(tooltip, charCode) {
   tooltip.innerHTML = '<span class="rep">'+char.txt+'</span><br />';
   var note = notes[char.txt];
   if (note) {
-    console.log(note);
+    // console.log(note);
     tooltip.innerHTML += note + '<br />';
   }
   tooltip.innerHTML += 'Decimal: <span class="num">'+charCode+'</span>';
   tooltip.innerHTML += ' Hexadecimal: <span class="num">0x'+('0'+charCode.toString(16)).substr(-2).toUpperCase()+'</span>';
   tooltip.innerHTML += '<br />Octal: <span class="num">0'+charCode.toString(8)+'</span>';
-  tooltip.innerHTML += ' Binary: <span class="num">'+charCode.toString(2)+'</span>';
+  tooltip.innerHTML += ' Binary: <span class="num">'+toBin(charCode)+'</span>';
   if (char.caret) {
     tooltip.innerHTML += '<br />Caret notation: <span class="caret">'+char.caret+'</span>';
   }
@@ -117,6 +115,10 @@ function fillTooltip(tooltip, charCode) {
       tooltip.appendChild(label);
     }
   }
+}
+
+function toBin(n) {
+  return ('00000000'+n.toString(2)).substr(-8).match(/\d{4}/g).join('  ');
 }
 
 function documentMouseMove(evt,charCode) {
@@ -141,7 +143,7 @@ function setupFilters() {
 }
 
 function filterBy(charClass) {
-  console.log(charClass);
+  // console.log(charClass);
   for (var i = 0; i < 128; i++) {
     if (chars[i][charClass] != 1) {
       document.getElementById("char"+i).style.visibility = "hidden";
